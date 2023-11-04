@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8cc0de; /* Light blue to represent the sky */
+  }
+  
+  #game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    background-image: url('town-background.png'); /* Replace with your town background image */
+  }
+  
+  #santa {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100px;
+    height: 50px;
+    background-image: url('santa-sleigh.png'); /* Replace with your Santa sleigh image */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .gift {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red; /* Representing the gift */
+    background-image: url('gift.png'); /* Replace with your gift image */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #santa {
+    width: 150px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    position: absolute;
+    top: 50px; /* Initial top position */
+    left: 0px; /* Initial left position */
+    background-image: url('santa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  #houses-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Height of the houses container */
+    overflow: hidden; /* Prevents any overflow from the houses */
+  }
+  
+  .house {
+    position: absolute;
+    bottom: 0; /* Aligns the house at the bottom of the houses container */
+    width: 100px; /* Set the width of your house */
+    height: 100px; /* Set the height of your house */
+    background: url('house.png'); /* Set the background image to a house picture */
+    background-size: cover;
+  }
+  
